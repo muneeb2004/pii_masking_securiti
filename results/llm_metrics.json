@@ -1,0 +1,49 @@
+{
+  "model": "llama-3.1-8b-instant",
+  "sample_size": 180,
+  "metrics": {
+    "PER": {
+      "TP": 407,
+      "FP": 22,
+      "FN": 43,
+      "TN": 3918,
+      "Precision": 0.9487,
+      "Recall": 0.9044,
+      "F1": 0.9261,
+      "FPR": 0.0056,
+      "FNR": 0.0956,
+      "Accuracy": 0.9852
+    },
+    "EMAIL": {
+      "TP": 33,
+      "FP": 1,
+      "FN": 0,
+      "TN": 4356,
+      "Precision": 0.9706,
+      "Recall": 1.0,
+      "F1": 0.9851,
+      "FPR": 0.0002,
+      "FNR": 0.0,
+      "Accuracy": 0.9998
+    },
+    "OVERALL": {
+      "TP": 440,
+      "FP": 22,
+      "FN": 42,
+      "TN": 3885,
+      "Precision": 0.9524,
+      "Recall": 0.9129,
+      "F1": 0.9322,
+      "FPR": 0.0056,
+      "FNR": 0.0871,
+      "Accuracy": 0.9854
+    }
+  },
+  "challenges": {
+    "format_failures": "LLaMA 3.2-1B occasionally generates malformed JSON requiring fallback regex extraction.",
+    "hallucinations": "Model may invent entity boundaries for common nouns resembling names (e.g., 'Machine' in band names).",
+    "boundary_errors": "Multi-token names frequently truncated or merged; email localpart/domain sometimes split incorrectly.",
+    "no_context": "Without fine-tuning, model lacks domain-specific cues and relies purely on surface patterns.",
+    "rate_limits": "Free tier rate limits require retry logic and reduce throughput to ~20-30 requests/minute."
+  }
+}

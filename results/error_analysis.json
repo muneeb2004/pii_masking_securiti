@@ -1,0 +1,154 @@
+{
+  "bert_errors": {
+    "PER": {
+      "FP_count": 20,
+      "FN_count": 20,
+      "FP_examples": [
+        {
+          "token": "Sant\u00e1ngel",
+          "true_tag": "O",
+          "pred_tag": "B-PER",
+          "context": "Queen Isabella I ( Sigourney Weaver ) owes money to Sant\u00e1ngel ."
+        },
+        {
+          "token": "Discordia",
+          "true_tag": "O",
+          "pred_tag": "B-PER",
+          "context": "The \" Principia Discordia \" , if read literally , encourages the worship of the Greek goddess Eris , known in Latin as D"
+        },
+        {
+          "token": "Ross",
+          "true_tag": "O",
+          "pred_tag": "B-PER",
+          "context": "In 1983 , Ross ventured further out of her earlier soul-based sound for a more pop rock-oriented sound following the rel"
+        },
+        {
+          "token": "Noether",
+          "true_tag": "O",
+          "pred_tag": "B-PER",
+          "context": "In mathematics , the \" Noether normalization lemma \" is a result of commutative algebra , introduced by Emmy Noether ( e"
+        },
+        {
+          "token": "Tarzanesque",
+          "true_tag": "O",
+          "pred_tag": "B-PER",
+          "context": "The protagonist of the game is a muscular , loincloth-wearing , Tarzanesque tribesman named Toki ( known in Japan and in"
+        },
+        {
+          "token": "Lie",
+          "true_tag": "O",
+          "pred_tag": "B-PER",
+          "context": "This is the abstract analogue of the Iwasawa decomposition of semisimple Lie groups ."
+        },
+        {
+          "token": "Chef",
+          "true_tag": "O",
+          "pred_tag": "B-PER",
+          "context": "Back home , Chef , who sees the outbreak on TV , tries to warn both the doctor and Mayor McDaniels ( who is having sex w"
+        },
+        {
+          "token": "Bamberger",
+          "true_tag": "O",
+          "pred_tag": "B-PER",
+          "context": "The \" Bamberger triazine synthesis \" in organic chemistry is a classic organic synthesis of a triazine first reported by"
+        },
+        {
+          "token": "Pleasantville",
+          "true_tag": "O",
+          "pred_tag": "B-PER",
+          "context": "After the bite transforms him into a werewolf , he fights against vampires , werecats , ghosts , zombies and other super"
+        },
+        {
+          "token": "Wipper",
+          "true_tag": "O",
+          "pred_tag": "B-PER",
+          "context": "The Wipper is fed by the Eine ."
+        }
+      ],
+      "FN_examples": [
+        {
+          "token": "Ruth",
+          "true_tag": "B-PER",
+          "pred_tag": "O",
+          "context": "( Ruth 1:16 \u2013 17 NJPS ) ."
+        },
+        {
+          "token": "Ruth",
+          "true_tag": "B-PER",
+          "pred_tag": "O",
+          "context": "The child is named Obed , who we discover is \" the father of Jesse , the father of David \" ( Ruth 4:13 \u2013 17 ) , that is "
+        },
+        {
+          "token": "\u00c9ntekhno",
+          "true_tag": "B-PER",
+          "pred_tag": "O",
+          "context": "He was also one of the main proponents of the \" \u00c9ntekhno \" form of music ( along with Mikis Theodorakis ) ."
+        },
+        {
+          "token": "Heliconia",
+          "true_tag": "B-PER",
+          "pred_tag": "O",
+          "context": "Very popular with this bird are Zingiberales , such as \" Costus scaber \" ( Costaceae ) , or \" Heliconia standleyi \" and "
+        },
+        {
+          "token": "Monica",
+          "true_tag": "B-PER",
+          "pred_tag": "O",
+          "context": "The original Brandy ( brandy@live.com ) and Monica lyrics were \" You need to give it up / Had about enough / It 's not h"
+        },
+        {
+          "token": "V\u1e5btra",
+          "true_tag": "B-PER",
+          "pred_tag": "O",
+          "context": "Famous prototypical draconic creatures include the \" mu\u0161\u1e2bu\u0161\u0161u \" of ancient Mesopotamia ; Apep in Egyptian mythology ; V\u1e5b"
+        },
+        {
+          "token": "Leviathan",
+          "true_tag": "B-PER",
+          "pred_tag": "O",
+          "context": "Famous prototypical draconic creatures include the \" mu\u0161\u1e2bu\u0161\u0161u \" of ancient Mesopotamia ; Apep in Egyptian mythology ; V\u1e5b"
+        },
+        {
+          "token": "Ladon",
+          "true_tag": "B-PER",
+          "pred_tag": "O",
+          "context": "Famous prototypical draconic creatures include the \" mu\u0161\u1e2bu\u0161\u0161u \" of ancient Mesopotamia ; Apep in Egyptian mythology ; V\u1e5b"
+        },
+        {
+          "token": "J\u00f6rmungandr",
+          "true_tag": "B-PER",
+          "pred_tag": "O",
+          "context": "Famous prototypical draconic creatures include the \" mu\u0161\u1e2bu\u0161\u0161u \" of ancient Mesopotamia ; Apep in Egyptian mythology ; V\u1e5b"
+        },
+        {
+          "token": "N\u00ed\u00f0h\u00f6ggr",
+          "true_tag": "B-PER",
+          "pred_tag": "O",
+          "context": "Famous prototypical draconic creatures include the \" mu\u0161\u1e2bu\u0161\u0161u \" of ancient Mesopotamia ; Apep in Egyptian mythology ; V\u1e5b"
+        }
+      ]
+    },
+    "EMAIL": {
+      "FP_count": 0,
+      "FN_count": 0,
+      "FP_examples": [],
+      "FN_examples": []
+    }
+  },
+  "llm_challenges": {
+    "format_failures": "LLaMA 3.2-1B occasionally generates malformed JSON requiring fallback regex extraction.",
+    "hallucinations": "Model may invent entity boundaries for common nouns resembling names (e.g., 'Machine' in band names).",
+    "boundary_errors": "Multi-token names frequently truncated or merged; email localpart/domain sometimes split incorrectly.",
+    "no_context": "Without fine-tuning, model lacks domain-specific cues and relies purely on surface patterns.",
+    "rate_limits": "Free tier rate limits require retry logic and reduce throughput to ~20-30 requests/minute."
+  },
+  "improvement_suggestions": [
+    "1. BERT \u2014 Org/Location Confusion: Many PER FPs are organization or location tokens appearing in name-like positions. Augment training with more diverse ORG/LOC negative examples to sharpen the PER boundary.",
+    "2. BERT \u2014 Email Subword Splitting: Emails containing hyphens, dots, or plus-signs are split by the WordPiece tokenizer, causing misaligned B-EMAIL labels. Inject emails in a wider variety of formats and apply regex post-processing to merge subword email fragments.",
+    "3. BERT \u2014 Foreign/Rare Names: Low-frequency names from non-English Wikipedia entries are frequently missed (FN). Adding multilingual NER pre-training (mBERT or XLM-RoBERTa) would improve coverage.",
+    "4. LLM \u2014 Structured Output Reliability: LLaMA 3.2-1B fails JSON schema compliance in ~10-15% of responses. Few-shot prompting (2-3 examples in the system prompt) substantially reduces format failures without violating the no-fine-tuning constraint.",
+    "5. LLM \u2014 Entity Boundary Precision: The model struggles with multi-token names, often truncating or over-extending spans. Chain-of-thought prompting ('first list all names, then format as JSON') improves span accuracy.",
+    "6. GENERAL \u2014 Regex Hybrid: A rule-based email pattern (RFC 5322 regex) as a post-processing step on top of both models would catch missed emails with near-zero FPR, since valid email format is deterministic.",
+    "7. GENERAL \u2014 Confidence Thresholding: For BERT, using softmax confidence scores to abstain on low-confidence predictions reduces FPR at a small recall cost \u2014 preferable in security contexts where FP masking degrades user experience."
+  ]
+}

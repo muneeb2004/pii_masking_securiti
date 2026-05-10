@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Model & training artifacts (large binary files)
+*.safetensors
+*.pt
+*.pth
+*.bin
+outputs/
+
+# Archives
+*.zip
+*.tar.gz
+*.gz
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
